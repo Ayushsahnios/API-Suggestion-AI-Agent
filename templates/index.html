@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sikka Agentic AI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 30px;
+    }
+
+    textarea {
+      width: 80%;
+      height: 120px;
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      resize: none;
+      background: #1c1c1c;
+      color: #f0f0f0;
+    }
+
+    button {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 10px 30px;
+      font-size: 18px;
+      border: none;
+      background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+      border-radius: 30px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #00f2fe;
+    }
+
+    pre {
+      background: #1c1c1c;
+      padding: 20px;
+      text-align: left;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    .loader {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #00f2fe;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { opacity: 0.2; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sikka Agentic AI</h1>
+  <p>Describe what you want to build.</p>
+
+  <textarea id="userInput" placeholder="Example: Build a payment gateway with frontend and backend..."></textarea><br>
+
+  <!-- Buttons -->
+  <button onclick="sendQuery()">Start Building</button>
+  <button onclick="downloadProject()">Download Project</button>
+
+  <div id="status" class="loader" style="display:none;"></div>
+
+  <h2>Subtasks:</h2>
+  <pre id="subtasks"></pre>
+
+  <h2>API Suggestions:</h2>
+  <pre id="api_info"></pre>
+
+  <h2>Generated Code:</h2>
+  <pre id="generated_code"></pre>
+
+  <script>
+    async function sendQuery() {
+      const userInput = document.getElementById('userInput').value;
+      const status = document.getElementById('status');
+      const subtasks = document.getElementById('subtasks');
+      const apiInfo = document.getElementById('api_info');
+      const generatedCode = document.getElementById('generated_code');
+
+      // Clear previous output
+      subtasks.innerText = "";
+      apiInfo.innerText = "";
+      generatedCode.innerText = "";
+
+      try {
+        status.style.display = 'block';
+        status.innerText = "Understanding your project requirements...";
+
+        const response = await fetch('/ask', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ query: userInput }),
+        });
+
+        status.innerText = "Finding matching APIs for your project...";
+
+        const data = await response.json();
+
+        status.innerText = "Writing your full codebase...";
+
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        status.style.display = 'none';
+
+        // Fill output sections
+        subtasks.innerText = data.subtasks || "No subtasks generated.";
+
+        if (data.api_info && Array.isArray(data.api_info)) {
+          let formattedApis = "";
+          data.api_info.forEach((api, index) => {
+            formattedApis += `API ${index + 1}:\n`;
+            formattedApis += `Name: ${api.api_name}\n`;
+            formattedApis += `Endpoint: ${api.endpoint}\n`;
+            formattedApis += `Description: ${api.description}\n\n`;
+          });
+          apiInfo.innerText = formattedApis.trim();
+        } else {
+          apiInfo.innerText = "No APIs found.";
+        }
+
+        generatedCode.innerText = data.generated_code || "No code generated.";
+
+      } catch (error) {
+        console.error(error);
+        status.innerText = "Error processing your request. Please try again!";
+      }
+    }
+
+    async function downloadProject() {
+      try {
+        const response = await fetch('/download');
+        if (!response.ok) {
+          alert('No project available yet! Please generate code first.');
+          return;
+        }
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'generated_project.zip';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL(url);
+
+        alert('Project download started!');
+      } catch (error) {
+        console.error(error);
+        alert('Error downloading project!');
+      }
+    }
+  </script>
+
+</body>
+</html>

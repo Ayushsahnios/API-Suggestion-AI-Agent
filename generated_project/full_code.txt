@@ -1,0 +1,80 @@
+index.html:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the API Integration Project</h1>
+        <div id="resources"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+```
+
+style.css:
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+```
+
+app.js:
+```javascript
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('http://localhost:5000/resources')
+        .then(response => response.json())
+        .then(data => {
+            const resourcesDiv = document.getElementById('resources');
+            data.forEach(resource => {
+                const resourceItem = document.createElement('div');
+                resourceItem.innerHTML = `<h3>${resource.title}</h3><p>${resource.description}</p>`;
+                resourcesDiv.appendChild(resourceItem);
+            });
+        })
+        .catch(error => console.error('Error fetching resources:', error));
+});
+```
+
+server.py:
+```python
+from flask import Flask, jsonify
+import requests
+
+app = Flask(__name__)
+
+@app.route('/resources')
+def get_resources():
+    response = requests.get('https://api.sikkasoft.com/v4/practice_resources')
+    resources = response.json()
+    return jsonify(resources)
+
+if __name__ == '__main__':
+    app.run()
+```
+
+In this setup, the frontend makes a request to the Flask backend which then fetches practice resources from the provided API and returns them to the frontend for display.

@@ -1,0 +1,93 @@
+appointments https://api.sikkasoft.com/v4/appointments Returns appointments data from practice
+appointments_available_slots https://api.sikkasoft.com/v4/appointments_available_slots Returns available appointments slots from practice.
+accounts_receivables https://api.sikkasoft.com/v4/accounts_receivables Returns account receivables details from practice
+accounts_receivables_by_patients https://api.sikkasoft.com/v4/accounts_receivables_by_patients Returns account receivables details by patients from practice
+patients https://api.sikkasoft.com/v4/patients Returns list of patients in practice
+patient_extended_info https://api.sikkasoft.com/v4/patient_extended_info Returns list of patients with extended information from practice
+veterinary_patients https://api.sikkasoft.com/v4/veterinary_patients Returns list of patients in practice
+practices https://api.sikkasoft.com/practices Return list of all practices
+transactions https://api.sikkasoft.com/v4/transactions Returns transactions data from practice
+guarantors https://api.sikkasoft.com/v4/guarantors Returns guarantors data from practice
+contact_details https://api.sikkasoft.com/v4/contact_details Returns contact details of patients from practice
+providers https://api.sikkasoft.com/v4/providers Returns provider details from practice
+guarantors_v2 https://api.sikkasoft.com/v4/guarantors_v2 Returns guarnators details from practice
+practice_variables https://api.sikkasoft.com/v4/practice_variable Returns practice variables like appointment status , patient status from practice
+claims https://api.sikkasoft.com/v4/claims Returns claim details from practice
+treatment_plans https://api.sikkasoft.com/v4/treatment_plans Returns treatment plans data from practice
+insurance_accounts_receivables https://api.sikkasoft.com/v4/insurance_accounts_receivables Returns insurance accounts receivables data from practice
+insurance_companies https://api.sikkasoft.com/v4/insurance_companies Returns insurance company detail from practice
+procedure_codes https://api.sikkasoft.com/v4/procedure_codes Returns procedure codes data from practice
+payment_types https://api.sikkasoft.com/v4/payment_types Returns payment types from practice
+payment_plans https://api.sikkasoft.com/v4/payment_plans Returns payment plans data from practice if practice management system storing payment plans
+reminders https://api.sikkasoft.com/v4/reminders Returns reminders data from practice. If remidners has been automatic setup in practice management system.
+patient_contract_roll_charges https://api.sikkasoft.com/v4/patient_contract_roll_charges Returns patient contracts roll charges data from practice
+patient_contracts https://api.sikkasoft.com/v4/patient_contracts Returns patient contract data from practice
+fee_schedules https://api.sikkasoft.com/v4/fee_schedules Returns fee scheudle data from practice
+referrals https://api.sikkasoft.com/v4/referrals Returns appointments data from practice
+appointment_statuses https://api.sikkasoft.com/v4/appointment_statuses Returns appointments status data from practice
+perio_charts https://api.sikkasoft.com/v4/perio_charts Returns perio charts data from practice
+patient_statuses https://api.sikkasoft.com/v4/patient_statuses Returns patient status data from practice
+patient_status_history https://api.sikkasoft.com/v4/patient_status_history Returns patient status history data from practice
+clinical_conditions https://api.sikkasoft.com/v4/clinical_conditions Returns clinical conditions data including status and tooth surface from practice
+clinical_note_templates https://api.sikkasoft.com/v4/clinical_note_templates Returns clinical note templates data including template name, category and prompts from practice
+guarantor_accounts https://api.sikkasoft.com/v4/guarantor_accounts Returns guarantor accounts details from practice
+insurance_company_details https://api.sikkasoft.com/v4/insurance_company_details Returns insurnace company details from practice
+treatment_plan_statuses https://api.sikkasoft.com/v4/treatment_plan_statuses Returns treatment plans status data from practice
+prescriptions https://api.sikkasoft.com/v4/prescriptions Returns prescriptions data from practice
+insurance_plan_coverage https://api.sikkasoft.com/v4/insurance_plan_coverage Returns insurance plan and coverage data from practice
+employers https://api.sikkasoft.com/v4/employers Returns employers data from practice
+drugs https://api.sikkasoft.com/v4/drugs Returns drugs data from practice
+claim_descriptions https://api.sikkasoft.com/v4/claim_descriptions Returns claims data from practice
+insurance_estimate https://api.sikkasoft.com/v4/insurance_estimate Returns insurance estimate data from practice
+lab_cases https://api.sikkasoft.com/v4/lab_cases Returns lab cases data from practice
+lab_details https://api.sikkasoft.com/v4/lab_details Returns lab details from practice
+lab_panels https://api.sikkasoft.com/v4/lab_panels Returns lab panels information from practice
+lab_profiles https://api.sikkasoft.com/v4/lab_profiles Returns lab profiles information from practice management system
+lab_sub_profiles https://api.sikkasoft.com/v4/lab_sub_profiles Returns lab sub profiles information from practice management system
+lab_profile_invoice_items https://api.sikkasoft.com/v4/lab_profile_invoice_items Returns lab profile invoice items information from practice management system
+lab_requests https://api.sikkasoft.com/v4/lab_requests Returns lab requests information from practice management system
+medical_history https://api.sikkasoft.com/v4/medical_history Returns patient medical history from practice
+shelter_patients https://api.sikkasoft.com/v4/shelter_patients Returns shelter patients data from practice ( applicable to veterinary practices. Shelter pets referred as patients here)
+subscribers https://api.sikkasoft.com/v4/subscribers Returns subsribers data from practice
+treatment_plan_phases https://api.sikkasoft.com/v4/treatment_plan_phases Returns treatment plan phases information from practice
+vendors https://api.sikkasoft.com/v4/vendors Returns vendors data from practice (applicable to veterinary)
+veterinary_clinics https://api.sikkasoft.com/v4/veterinary_clinics Returns veterinary clinic information
+insurance_eligibility https://api.sikkasoft.com/v4/insurance_eligibility Returns insurance eligibility
+optometry_product_details https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all Return the list of optometry products
+lab_test_details https://api.sikkasoft.com/v4/lab_test_details?category=labname Return the lab test details
+patient_documents_display https://api.sikkasoft.com/v4/patient_documents_display Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours.
+patient_balance https://api.sikkasoft.com/v4/patient_balance Return patient balance from practice management systems.
+suspended_credit_transactions https://api.sikkasoft.com/v4/suspended_credit_transactions Return patient's suspended credit transactions balance from practice management systems.
+preregistered_appointments https://api.sikkasoft.com/v4/preregistered_appointments Return incoming or referral patient information, before they are actually added as an official patient.
+preregistered_patients https://api.sikkasoft.com/v4/preregistered_patients Return incoming or referral patient information, before they are actually added as an official patient.
+guarantor_patient_mapping https://api.sikkasoft.com/v4/guarantor_patient_mapping Returns guarantors details associated with patient
+patient_addresses https://api.sikkasoft.com/v4/patient_addresses Returns patient address details
+patient_charts https://api.sikkasoft.com/v4/patient_charts Returns patient charts details with surface, chart date and tooth number.
+many_guarantors_one_patient https://api.sikkasoft.com/v4/many_guarantors_one_patient Returns guarantors details associated with patient
+provider_mapping https://api.sikkasoft.com/v4/provider_mapping Returns provider mapping
+authorized_practices https://api.sikkasoft.com/v4/authorized_practices This API will give you the list of practices from which you can access data
+applications https://api.sikkasoft.com/v4/applications Returns your application details.
+animal_vital_signs https://api.sikkasoft.com/v4/animal_vital_signs Returns vital signs details of pat. This API is for veterinary practices.
+practice_schedule https://api.sikkasoft.com/v4/practice_schedule Returns practice schedule details.
+veterinary_product_details https://api.sikkasoft.com/v4/veterinary_product_details Returns product details for veterinary practice.
+products https://api.sikkasoft.com/v4/products Returns product list. This API is for veterinary practices.
+practice_resources https://api.sikkasoft.com/v4/practice_resources Return practice resources.
+veterinary_product_inventory https://api.sikkasoft.com/v4/veterinary_product_inventory Returns product inventory for the veterinary practices.
+lab_results https://api.sikkasoft.com/v4/lab_results Returns lab results details. This API is for veterinary practices.
+hearing_aid_products https://api.sikkasoft.com/v4/hearing_aid_products Returns product list for hearing care.
+hearing_care_product_details https://api.sikkasoft.com/v4/hearing_care_product_details Returns product details for hearing care.
+manufacturers https://api.sikkasoft.com/v4/manufacturers Return manufactures details with contact details.
+pending_procedures https://api.sikkasoft.com/v4/pending_procedures Returns pending procedures for the patient with available balance data from practice
+operatories https://api.sikkasoft.com/v4/operatories Returns operatories available in practice.
+patient360 https://api.sikkasoft.com/v4/patient360 Returns patient details with appointments, transactions, claims, treatment plans. You can get patient 360 details available in the practice using this API.
+xrays https://api.sikkasoft.com/v4/xrays Returns patient xray details.
+kpis https://api.sikkasoft.com/v4/kpis A key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.
+kpis details https://api.sikkasoft.com/v4/kpis?kpi_name&practice_id&startdate&enddate A key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization. KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.
+finance/balances https://api.sikkasoft.com/v4/finance/balances Returns balance details data from practice's finance system.
+finance/payroll_details https://api.sikkasoft.com/v4/finance/payroll_details Returns payroll details data from practice's finance system.
+finance/employee https://api.sikkasoft.com/v4/finance/employee Returns employee details data from practice's finance system.
+finance/vendors https://api.sikkasoft.com/v4/finance/vendors Returns vendors details from practice's finance system.
+finance/budgets https://api.sikkasoft.com/v4/finance/budgets Returns budgets details data from practice's finance system.
+finance/customers https://api.sikkasoft.com/v4/finance/customers Returns customer details data from practice's finance system.
+finance/accounts https://api.sikkasoft.com/v4/finance/accounts Returns accounts data from practice's finance system
+finance/transactions https://api.sikkasoft.com/v4/finance/transactions Returns transaction details from practice's finance system.

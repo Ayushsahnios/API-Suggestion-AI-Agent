@@ -1,0 +1,467 @@
+[
+  {
+    "api_name":"appointments",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/appointments",
+    "description":"Returns appointments data from practice"
+  },
+  {
+    "api_name":"appointments_available_slots",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/appointments_available_slots",
+    "description":"Returns available appointments slots from practice."
+  },
+  {
+    "api_name":"accounts_receivables",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/accounts_receivables",
+    "description":"Returns account receivables details from practice"
+  },
+  {
+    "api_name":"accounts_receivables_by_patients",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/accounts_receivables_by_patients",
+    "description":"Returns account receivables details by patients from practice"
+  },
+  {
+    "api_name":"patients",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patients",
+    "description":"Returns list of patients in practice"
+  },
+  {
+    "api_name":"patient_extended_info",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_extended_info",
+    "description":"Returns list of patients with extended information from practice"
+  },
+  {
+    "api_name":"veterinary_patients",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/veterinary_patients",
+    "description":"Returns list of patients in practice"
+  },
+  {
+    "api_name":"practices",
+    "endpoint":"https:\/\/api.sikkasoft.com\/practices",
+    "description":"Return list of all practices"
+  },
+  {
+    "api_name":"transactions",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/transactions",
+    "description":"Returns transactions data from practice"
+  },
+  {
+    "api_name":"guarantors",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/guarantors",
+    "description":"Returns guarantors data from practice"
+  },
+  {
+    "api_name":"contact_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/contact_details",
+    "description":"Returns contact details of patients from practice"
+  },
+  {
+    "api_name":"providers",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/providers",
+    "description":"Returns provider details from practice"
+  },
+  {
+    "api_name":"guarantors_v2",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/guarantors_v2",
+    "description":"Returns guarnators details from practice"
+  },
+  {
+    "api_name":"practice_variables",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/practice_variable",
+    "description":"Returns practice variables like appointment status , patient status from practice"
+  },
+  {
+    "api_name":"claims",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/claims",
+    "description":"Returns claim details from practice"
+  },
+  {
+    "api_name":"treatment_plans",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/treatment_plans",
+    "description":"Returns treatment plans data from practice"
+  },
+  {
+    "api_name":"insurance_accounts_receivables",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/insurance_accounts_receivables",
+    "description":"Returns insurance accounts receivables data from practice"
+  },
+  {
+    "api_name":"insurance_companies",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/insurance_companies",
+    "description":"Returns insurance company detail from practice"
+  },
+  {
+    "api_name":"procedure_codes",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/procedure_codes",
+    "description":"Returns procedure codes data from practice"
+  },
+  {
+    "api_name":"payment_types",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/payment_types",
+    "description":"Returns payment types from practice"
+  },
+  {
+    "api_name":"payment_plans",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/payment_plans",
+    "description":"Returns payment plans data from practice if practice management system storing payment plans"
+  },
+  {
+    "api_name":"reminders",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/reminders",
+    "description":"Returns reminders data from practice. If remidners has been automatic setup in practice management system."
+  },
+  {
+    "api_name":"patient_contract_roll_charges",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_contract_roll_charges",
+    "description":"Returns patient contracts roll charges data from practice"
+  },
+  {
+    "api_name":"patient_contracts",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_contracts",
+    "description":"Returns patient contract data from practice"
+  },
+  {
+    "api_name":"fee_schedules",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/fee_schedules",
+    "description":"Returns fee scheudle data from practice"
+  },
+  {
+    "api_name":"referrals",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/referrals",
+    "description":"Returns appointments data from practice"
+  },
+  {
+    "api_name":"appointment_statuses",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/appointment_statuses",
+    "description":"Returns appointments status data from practice"
+  },
+  {
+    "api_name":"perio_charts",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/perio_charts",
+    "description":"Returns perio charts data from practice"
+  },
+  {
+    "api_name":"patient_statuses",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_statuses",
+    "description":"Returns patient status data from practice"
+  },
+  {
+    "api_name":"patient_status_history",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_status_history",
+    "description":"Returns patient status history data from practice"
+  },
+  {
+    "api_name":"clinical_conditions",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/clinical_conditions",
+    "description":"Returns clinical conditions data including status and tooth surface from practice"
+  },
+  {
+    "api_name":"clinical_note_templates",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/clinical_note_templates",
+    "description":"Returns clinical note templates data including template name, category and prompts from practice"
+  },
+  {
+    "api_name":"guarantor_accounts",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/guarantor_accounts",
+    "description":"Returns guarantor accounts details from practice"
+  },
+  {
+    "api_name":"insurance_company_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/insurance_company_details",
+    "description":"Returns insurnace company details from practice"
+  },
+  {
+    "api_name":"treatment_plan_statuses",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/treatment_plan_statuses",
+    "description":"Returns treatment plans status data from practice"
+  },
+  {
+    "api_name":"prescriptions",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/prescriptions",
+    "description":"Returns prescriptions data from practice"
+  },
+  {
+    "api_name":"insurance_plan_coverage",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/insurance_plan_coverage",
+    "description":"Returns insurance plan and coverage data from practice"
+  },
+  {
+    "api_name":"employers",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/employers",
+    "description":"Returns employers data from practice"
+  },
+  {
+    "api_name":"drugs",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/drugs",
+    "description":"Returns drugs data from practice"
+  },
+  {
+    "api_name":"claim_descriptions",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/claim_descriptions",
+    "description":"Returns claims data from practice"
+  },
+  {
+    "api_name":"insurance_estimate",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/insurance_estimate",
+    "description":"Returns insurance estimate data from practice"
+  },
+  {
+    "api_name":"lab_cases",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_cases",
+    "description":"Returns lab cases data from practice"
+  },
+  {
+    "api_name":"lab_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_details",
+    "description":"Returns lab details from practice"
+  },
+  {
+    "api_name":"lab_panels",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_panels",
+    "description":"Returns lab panels information from practice"
+  },
+  {
+    "api_name":"lab_profiles",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_profiles",
+    "description":"Returns lab profiles information from practice management system"
+  },
+  {
+    "api_name":"lab_sub_profiles",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_sub_profiles",
+    "description":"Returns lab sub profiles information from practice management system"
+  },
+  {
+    "api_name":"lab_profile_invoice_items",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_profile_invoice_items",
+    "description":"Returns lab profile invoice items information from practice management system"
+  },
+  {
+    "api_name":"lab_requests",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_requests",
+    "description":"Returns lab requests information from practice management system"
+  },
+  {
+    "api_name":"medical_history",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/medical_history",
+    "description":"Returns patient medical history from practice"
+  },
+  {
+    "api_name":"shelter_patients",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/shelter_patients",
+    "description":"Returns shelter patients data from practice ( applicable to veterinary practices. Shelter pets referred as patients here)"
+  },
+  {
+    "api_name":"subscribers",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/subscribers",
+    "description":"Returns subsribers data from practice"
+  },
+  {
+    "api_name":"treatment_plan_phases",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/treatment_plan_phases",
+    "description":"Returns treatment plan phases information from practice"
+  },
+  {
+    "api_name":"vendors",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/vendors",
+    "description":"Returns vendors data from practice (applicable to veterinary)"
+  },
+  {
+    "api_name":"veterinary_clinics",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/veterinary_clinics",
+    "description":"Returns veterinary clinic information"
+  },
+  {
+    "api_name":"insurance_eligibility",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/insurance_eligibility",
+    "description":"Returns insurance eligibility"
+  },
+  {
+    "api_name":"optometry_product_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/optometry_product_details?fields=get_all",
+    "description":"Return the list of optometry products"
+  },
+  {
+    "api_name":"lab_test_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_test_details?category=labname",
+    "description":"Return the lab test details"
+  },
+  {
+    "api_name":"patient_documents_display",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_documents_display",
+    "description":"Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours."
+  },
+  {
+    "api_name":"patient_balance",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_balance",
+    "description":"Return patient balance from practice management systems."
+  },
+  {
+    "api_name":"suspended_credit_transactions",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/suspended_credit_transactions",
+    "description":"Return patient's suspended credit transactions balance from practice management systems."
+  },
+  {
+    "api_name":"preregistered_appointments",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/preregistered_appointments",
+    "description":"Return incoming or referral patient information, before they are actually added as an official patient."
+  },
+  {
+    "api_name":"preregistered_patients",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/preregistered_patients",
+    "description":"Return incoming or referral patient information, before they are actually added as an official patient."
+  },
+  {
+    "api_name":"guarantor_patient_mapping",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/guarantor_patient_mapping",
+    "description":"Returns guarantors details associated with patient"
+  },
+  {
+    "api_name":"patient_addresses",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_addresses",
+    "description":"Returns patient address details"
+  },
+  {
+    "api_name":"patient_charts",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient_charts",
+    "description":"Returns patient charts details with surface, chart date and tooth number."
+  },
+  {
+    "api_name":"many_guarantors_one_patient",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/many_guarantors_one_patient",
+    "description":"Returns guarantors details associated with patient"
+  },
+  {
+    "api_name":"provider_mapping",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/provider_mapping",
+    "description":"Returns provider mapping"
+  },
+  {
+    "api_name":"authorized_practices",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/authorized_practices",
+    "description":"This API will give you the list of practices from which you can access data"
+  },
+  {
+    "api_name":"applications",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/applications",
+    "description":"Returns your application details."
+  },
+  {
+    "api_name":"animal_vital_signs",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/animal_vital_signs",
+    "description":"Returns vital signs details of pat. This API is for veterinary practices."
+  },
+  {
+    "api_name":"practice_schedule",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/practice_schedule",
+    "description":"Returns practice schedule details."
+  },
+  {
+    "api_name":"veterinary_product_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/veterinary_product_details",
+    "description":"Returns product details for veterinary practice."
+  },
+  {
+    "api_name":"products",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/products",
+    "description":"Returns product list. This API is for veterinary practices."
+  },
+  {
+    "api_name":"practice_resources",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/practice_resources",
+    "description":"Return practice resources."
+  },
+  {
+    "api_name":"veterinary_product_inventory",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/veterinary_product_inventory",
+    "description":"Returns product inventory for the veterinary practices."
+  },
+  {
+    "api_name":"lab_results",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/lab_results",
+    "description":"Returns lab results details. This API is for veterinary practices."
+  },
+  {
+    "api_name":"hearing_aid_products",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/hearing_aid_products",
+    "description":"Returns product list for hearing care."
+  },
+  {
+    "api_name":"hearing_care_product_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/hearing_care_product_details",
+    "description":"Returns product details for hearing care."
+  },
+  {
+    "api_name":"manufacturers",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/manufacturers",
+    "description":"Return manufactures details with contact details."
+  },
+  {
+    "api_name":"pending_procedures",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/pending_procedures",
+    "description":"Returns pending procedures for the patient with available balance data from practice"
+  },
+  {
+    "api_name":"operatories",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/operatories",
+    "description":"Returns operatories available in practice."
+  },
+  {
+    "api_name":"patient360",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/patient360",
+    "description":"Returns patient details with appointments, transactions, claims, treatment plans. You can get patient 360 details available in the practice using this API."
+  },
+  {
+    "api_name":"xrays",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/xrays",
+    "description":"Returns patient xray details."
+  },
+  {
+    "api_name":"kpis",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/kpis",
+    "description":"A key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time."
+  },
+  {
+    "api_name":"kpis details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/kpis?kpi_name&practice_id&startdate&enddate",
+    "description":"A key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization. KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time."
+  },
+  {
+    "api_name":"finance\/balances",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/balances",
+    "description":"Returns balance details data from practice's finance system."
+  },
+  {
+    "api_name":"finance\/payroll_details",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/payroll_details",
+    "description":"Returns payroll details data from practice's finance system."
+  },
+  {
+    "api_name":"finance\/employee",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/employee",
+    "description":"Returns employee details data from practice's finance system."
+  },
+  {
+    "api_name":"finance\/vendors",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/vendors",
+    "description":"Returns vendors details from practice's finance system."
+  },
+  {
+    "api_name":"finance\/budgets",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/budgets",
+    "description":"Returns budgets details data from practice's finance system."
+  },
+  {
+    "api_name":"finance\/customers",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/customers",
+    "description":"Returns customer details data from practice's finance system."
+  },
+  {
+    "api_name":"finance\/accounts",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/accounts",
+    "description":"Returns accounts data from practice's finance system"
+  },
+  {
+    "api_name":"finance\/transactions",
+    "endpoint":"https:\/\/api.sikkasoft.com\/v4\/finance\/transactions",
+    "description":"Returns transaction details from practice's finance system."
+  }
+]

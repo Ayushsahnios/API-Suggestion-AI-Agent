@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sikka-ai-payment-gateway
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn server:app
+    plan: free
